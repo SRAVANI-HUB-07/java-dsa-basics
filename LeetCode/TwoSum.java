@@ -3,6 +3,14 @@ package LeetCode;
 import java.util.*;
 
 public class TwoSum {
+    public static void main(String args[]) {
+        TwoSum obj = new TwoSum();
+        int nums[] = new int[] { 2, 7, 8, 0 };
+        int target = 9;
+        int sol[] = obj.twoSum(nums, target);
+        System.out.print("{ " + sol[0] + ", " + sol[1] + " }");
+    }
+
     public int[] twoSum(int[] nums, int target) {
 
         // Brute force solution
