@@ -21,17 +21,16 @@ public class Anagram {
                 hm.put(ch1, hm.getOrDefault(ch1, 0) + 1);
                 hm.put(ch2, hm.getOrDefault(ch2, 0) - 1);
             }
-            int flag = 1;
+
             for (int i : hm.values()) {
                 if (i != 0) {
-                    flag = 0;
-                    break;
+
+                    System.out.print("Both are not anagrams");
+                    return;
                 }
             }
-            if (flag == 1)
-                System.out.print("Both are anagrams");
-            else
-                System.out.print("Both are not anagrams");
+
+            System.out.print("Both are anagrams");
 
         }
 

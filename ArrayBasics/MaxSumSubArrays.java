@@ -6,7 +6,7 @@ package ArrayBasics;
 public class MaxSumSubArrays {
     public static void main(String args[]) {
         int arr[] = new int[] { 1, -1, 10, 7, 4 };
-        int size = -1;
+        int size = 5;
         MaxSumSubArrays obj = new MaxSumSubArrays();
         System.out.print(obj.maxSumSubArrays(arr, size));
     }
