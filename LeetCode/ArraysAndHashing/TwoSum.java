@@ -1,6 +1,18 @@
-package LeetCode;
+package LeetCode.ArraysAndHashing;
 
 import java.util.*;
+
+/*
+Problem: Two Sum
+Pattern: Hashing
+Data Structure: HashMap
+Algorithm: Traverse the array once, store each element and its index in a HashMap, and check if the complement (target - current element) already exists.
+Time Complexity: O(n)
+Reason: Each element is processed once, and HashMap containsKey(), get(), and put() take O(1) on average.
+Space Complexity: O(n)
+Reason: In the worst case, the HashMap stores all n elements and their indices.
+Key Idea: Store previously seen numbers in a HashMap so the required complement can be found in constant time.
+*/
 
 public class TwoSum {
     public static void main(String args[]) {
@@ -12,29 +24,6 @@ public class TwoSum {
     }
 
     public int[] twoSum(int[] nums, int target) {
-
-        // Brute force solution
-
-        // int result[]=new int[2];
-        // for(int i=0;i<nums.length;i++)
-        // {
-
-        // int remain=target-nums[i];
-        // for(int j=i+1;j<nums.length;j++)
-        // {
-        // if(nums[j]==remain)
-        // {
-        // result[0]=i;
-        // result[1]=j;
-        // break;
-        // }
-
-        // }
-
-        // }
-        // return result;
-
-        // Optimized solution using HashMap
 
         HashMap<Integer, Integer> hm = new HashMap<>();
 

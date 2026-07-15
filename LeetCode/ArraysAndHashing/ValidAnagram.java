@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.ArraysAndHashing;
 
 /*
 Problem: Valid Anagram
